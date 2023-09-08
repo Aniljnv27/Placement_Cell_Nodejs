@@ -17,6 +17,9 @@ const DB = 'mongodb+srv://manianil8423:Anil&2000@cluster0.p4pyoxg.mongodb.net/?r
 // }).then(() => {
 // 	console.log('connection successful');
 // }).catch((err) => console.log('no connection',err));
+mongoose.set('strictQuery', true); // If you want to keep strict query validation
+// OR
+mongoose.set('strictQuery', false); // If you want to disable strict query validation
 
 
 mongoose.connect(DB, {
