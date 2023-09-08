@@ -1,38 +1,20 @@
 const mongoose = require('mongoose');
-// mongoose.set('strictQuery',true);
-// const dotenv = require('.env');
+
 const DB = 'mongodb+srv://manianil8423:Anil&2000@cluster0.p4pyoxg.mongodb.net/?retryWrites=true&w=majority';
-// dotenv.config({ path: 'config/.env' });
 
-//connecting mongoose with database
-//I stored MONGODB_URI in my system veriable for security reason. veriable name MONGODB_URI followed by your mongo atlas link
-//for local use you can write this code
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/csvUploader');
-
-// mongoose.connect(DB, {
-// 	useNewUrlParser: true,
-// 	useCreateIndex:true,
-//  	useUnifiedTopology: true,
-// 	useFindAndModify:false
-// }).then(() => {
-// 	console.log('connection successful');
-// }).catch((err) => console.log('no connection',err));
-mongoose.set('strictQuery', true); // If you want to keep strict query validation
-// OR
-mongoose.set('strictQuery', false); // If you want to disable strict query validation
-
-
+// Configure the useNewUrlParser option when connecting to MongoDB
 mongoose.connect(DB, {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-});
+  useNewUrlParser: true,
+  useUnifiedTopology: true, // Add this option as well
+})
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((err) => {
+    console.error('Error connecting to MongoDB:', err.message);
+    process.exit(1);
+  });
 
 const db = mongoose.connection;
 
-db.on('error', console.error.bind(console, 'Error in connecting to MongoDB'));
-
-db.once('open', function () {
-	console.log('Connected to Database :: Mongodb');
-});
-
-module.exports = mongoose;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
