@@ -1,9 +1,12 @@
 # NodeJS-Placement-Cell
- <h1 align="center">Placement Cell  📝</h1> 
+<h1 align="center">Placement Cell  📝</h1> 
 <p align="center">
  🖊️ An interface for coding ninjas placement cell to keep records of students and schedule interviews with different companies <br>
      This App built using <a href="https://ejs.co/">EJS</a>, <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://expressjs.com/">ExpressJs</a>, <a href="https://nodejs.org/en/">NodeJs</a> and <a href="http://www.passportjs.org/">PassportJS</a>
 </p>
+
+## Web site Link
+-<a href="https://placement-cell-nodejs-8mar.onrender.com/">Phttps://placement-cell-nodejs-8mar.onrender.com/</a>
 
 ## Features
 
@@ -38,7 +41,6 @@ Run `npm install` to install required dependencies
 
 Environment Variables:
 
-- PORT = [Your Port]
-- SECRET = [Your Secret]
-- MONGO_URI = [Your MongoDB Ur]
+- PORT = 8000
+- MONGO_URI = 'mongodb+srv://manianil8423:Anil&2000@cluster0.p4pyoxg.mongodb.net/?retryWrites=true&w=majority'
 # Placement_Cell_Nodejs
