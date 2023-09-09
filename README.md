@@ -6,7 +6,7 @@
 </p>
 
 ## Web site Link
--<a href="https://placement-cell-nodejs-8mar.onrender.com/">https://placement-cell-nodejs-8mar.onrender.com/</a>
+-<a href="https://placementcellnodejs-epuk.onrender.com">https://placementcellnodejs-epuk.onrender.com</a>
 
 ## Features
 
