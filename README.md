@@ -42,5 +42,4 @@ Run `npm install` to install required dependencies
 Environment Variables:
 
 - PORT = 8000
-- MONGO_URI = 'mongodb+srv://manianil8423:Anil&2000@cluster0.p4pyoxg.mongodb.net/?retryWrites=true&w=majority'
 # Placement_Cell_Nodejs
